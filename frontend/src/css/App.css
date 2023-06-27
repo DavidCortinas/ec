@@ -1,0 +1,128 @@
+html {
+  background-color: #efe9d3;
+}
+
+.App {
+  background-color: #efe9d3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+}
+
+.navbar {
+
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #efe9d3;
+  z-index: 3;
+  height: 8vmin;
+  margin: 0;
+  padding: 0;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.event {
+  display: flex;
+  padding-top: 1rem;
+  width: 175vmin;
+}
+
+.event-img {
+  height: 100vmin;
+  flex: 0 0 auto;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.event-text {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+.details-list-item {
+  margin: 2px 0
+}
+
+.details-list {
+  /* padding-top: 2px; */
+}
+
+.event-title {
+  margin: 0;
+  text-align: center;
+}
+
+.event-paragrah {
+  text-align: start;
+}
+
+.event-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#earth-orbit {
+    border: 2px solid #373737;
+    border-radius: 50%;
+    left: 50%;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    -webkit-animation: spin-right 10s linear infinite;
+    -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+    -o-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
